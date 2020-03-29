@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=0" />
+  <link rel="stylesheet" href="../static/css/mui.min.css" />
+  <link rel="stylesheet" href="../static/css/reset.css" />
+  <link rel="stylesheet" href="../static/css/base.css" />
+  <link rel="stylesheet" href="../static/css/mui.picker.min.css" />
+  <link rel="stylesheet" href="../css/homePage.css" />
+  <link rel="stylesheet" href="../css/operatingFloor.css" />
+  <title>操作台</title>
+</head>
+
+<body>
+<!--***************header  sta*********************-->
+<header id="header" class="mui-bar mui-bar-nav header">
+  <a id="info" class="mui-icon mui-pull-right">
+    <img src="../images/icon48_currency@2x.png"/>
+  </a>
+  <h1 class="mui-title">操作台</h1>
+</header>
+<!--***************header  end*********************-->
+<!--*****************toBeDownloaded str****************************-->
+<div id="busAcceptance" class="mui-control-content mui-active scrollWrapper">
+  <div id="busAcc-wrapper" class="mui-scroll-wrapper">
+    <div class="mui-scroll">
+      <div class="toBeDownloaded">
+        <h1>待下载业务(点击下载)</h1>
+        <ul class="business">
+          <li>
+            <span><img src="../images/icon64_currency@2x.png"/></span>
+            <span>12</span>
+            <span>现场业扩</span>
+          </li>
+          <li>
+            <span><img src="../images/icon64_currency@2x.png"/></span>
+            <span>20</span>
+            <span>抄表催费</span>
+          </li>
+          <li>
+            <span><img src="../images/icon64_currency@2x.png"/></span>
+            <span>0</span>
+            <span>用电检查</span>
+          </li>
+        </ul>
+      </div>
+      <!--*****************toBeDownloaded end****************************-->
+      <!--*****************businessTable str****************************-->
+      <div class="mui-content businessFunction">
+        <div>
+          <div id="segmentedControl" class="mui-segmented-control">
+            <a class="mui-control-item mui-active" href="#item1">
+              业扩
+            </a>
+            <a class="mui-control-item" href="#item2">
+              电费
+            </a>
+            <a class="mui-control-item" href="#item3">
+              用检
+            </a>
+          </div>
+        </div>
+        <div>
+          <div id="item1" class="mui-control-content mui-active">
+            <ul class="businessTable">
+              <li>
+                <span><img src="../images/icon64_currency@2x.png"/></span>
+                <span>业务受理</span>
+              </li>
+              <li>
+                <span><img src="../images/icon64_currency@2x.png"/></span>
+                <span>现场勘查</span>
+              </li>
+              <li>
+                <span><img src="../images/icon64_currency@2x.png"/></span>
+                <span>中间检查</span>
+              </li>
+              <li>
+                <span><img src="../images/icon64_currency@2x.png"/></span>
+                <span>竣工验收</span>
+              </li>
+              <li>
+                <span><img src="../images/icon64_currency@2x.png"/></span>
+                <span>装(拆)表管理</span>
+              </li>
+              <li>
+                <span><img src="../images/icon64_currency@2x.png"/></span>
+                <span>停(送)电管理</span>
+              </li>
+            </ul>
+          </div>
+          <div id="item2" class="mui-control-content">
+            <ul class="businessTable">
+              <li>
+                <span><img src="../images/icon64_currency@2x.png"/></span>
+                <span>现场抄表</span>
+              </li>
+              <li>
+                <span><img src="../images/icon64_currency@2x.png"/></span>
+                <span>现场催费</span>
+              </li>
+              <li>
+                <span><img src="../images/icon64_currency@2x.png"/></span>
+                <span>停电通知</span>
+              </li>
+              <li>
+                <span><img src="../images/icon64_currency@2x.png"/></span>
+                <span>现场停电</span>
+              </li>
+              <li>
+                <span><img src="../images/icon64_currency@2x.png"/></span>
+                <span>现场复电</span>
+              </li>
+              <li>
+                <span><img src="../images/icon64_currency@2x.png"/></span>
+                <span>应急复电</span>
+              </li>
+            </ul>
+          </div>
+          <div id="item3" class="mui-control-content">
+            <ul class="businessTable">
+              <li>
+                <span><img src="../images/icon64_currency@2x.png"/></span>
+                <span>周期检查</span>
+              </li>
+              <li>
+                <span><img src="../images/icon64_currency@2x.png"/></span>
+                <span>专项检查</span>
+              </li>
+              <li>
+                <span><img src="../images/icon64_currency@2x.png"/></span>
+                <span>违约用电/窃电</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!--*****************businessTable str****************************-->
+      <div class="publicFunction">
+        <h1>公共功能</h1>
+        <div class="functionList">
+          <ul class="businessTable">
+            <li>
+              <span><img src="../images/icon64_currency@2x.png"/></span>
+              <span>异常通知</span>
+            </li>
+            <li>
+              <span><img src="../images/icon64_currency@2x.png"/></span>
+              <span>信息查询</span>
+            </li>
+            <li>
+              <span><img src="../images/icon64_currency@2x.png"/></span>
+              <span>用户信息变更</span>
+            </li>
+            <li>
+              <span><img src="../images/icon64_currency@2x.png"/></span>
+              <span>图片浏览</span>
+            </li>
+            <li>
+              <span><img src="../images/icon64_currency@2x.png"/></span>
+              <span>路径导航</span>
+            </li>
+            <li>
+              <span><img src="../images/icon64_currency@2x.png"/></span>
+              <span>短信订阅</span>
+            </li>
+            <li>
+              <span><img src="../images/icon64_currency@2x.png"/></span>
+              <span>修改订阅</span>
+            </li>
+
+            <li>
+              <span><img src="../images/icon64_currency@2x.png"/></span>
+              <span>知识库</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--**********************底部导航 sta**********************-->
+<nav class="mui-bar mui-bar-tab">
+  <a class="mui-tab-item1 sy" >
+    <span class="mui-icon"><img src="../images/bottombar_icon_index@2x.png"></span>
+
+    <span class="mui-tab-label">首页</span>
+  </a>
+  <a class="mui-tab-item1 czt">
+    <span class="mui-icon"><img src="../images/bottombat_icon_console@2x.png"></span>
+    <span class="mui-tab-label">操作台</span>
+  </a>
+  <a class="mui-tab-item1 my">
+    <span class="mui-icon"><img src="../images/bottombar_icon_my@2x.png"></span>
+    <span class="mui-tab-label" >我的</span>
+  </a>
+</nav>
+<!--**********************底部导航 end**********************-->
+<script type="text/javascript" src="../static/js/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="../static/js/mui.min.js"></script>
+<script type="text/javascript" src="../static/js/mui.picker.min.js" ></script>
+<script type="text/javascript" src="../static/js/rem.js" ></script>
+<script src="../static/js/bzyd.common.js"></script>
+<script>
+  mui.init({
+    swipeBack: true //启用右滑关闭功能
+  });
+  (function($) {
+    $('#busAcc-wrapper').scroll({
+      indicators: false //是否显示滚动条
+    });
+  })(mui);
+//  $(function() {
+//    /*轮播图自动播放*/
+//    var slider = mui("#carousel");
+//    slider.slider({
+//      interval: 5000
+//    });
+//    /*计算模块的高度*/
+//    var winHeight = $(window,'body').height();
+//    var newHeight = winHeight - 94;
+//    $("#busAcceptance").css("height", newHeight);
+//  })
+
+  //            首页
+  $(".sy").click(function(){
+    BZYD.jnp("./homePage.html");
+  });
+  //			  操作台
+  $(".czt").click(function(){
+    BZYD.jnp("./operatingFloor.html");
+  });
+  //              我的
+  $(".my").click(function(){
+    BZYD.jnp("./mine.html");
+  });
+</script>
+</body>
+
+</html>

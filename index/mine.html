@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=0" />
+		<link rel="stylesheet" href="../static/css/mui.min.css" />
+		<link rel="stylesheet" href="../static/css/reset.css" />
+		<link rel="stylesheet" href="../static/css/base.css" />
+		<link rel="stylesheet" href="../static/css/mui.picker.min.css" />
+		<link rel="stylesheet" href="../css/mine.css" />
+		<title></title>
+	</head>
+
+	<body>
+		<header id="header" class="mui-bar mui-bar-nav header">
+			<h1 class="mui-title">我的</h1>
+
+		</header>
+		<div class="userInfoModule">
+			<span class="userImg"><img src="../images/my_head_default@2x.png"/></span>
+			<span class="userNameASta">
+				<label class="userState">陈兆天（离线登陆）</label><br>
+				<label class="userMarkNumLable">营销用户账号：</label><span class="userMarkNum">fsdfdsf</span>
+			</span>
+			<span class="details">详情></span>
+			
+		</div>	
+		
+		<div id="userInforList" class="mui-control-content mui-active">
+			<div id="userInfor-wrapper" class="mui-scroll-wrapper">
+				<div class="mui-scroll">
+					<ul class="userInstallUl"> 
+						<li class="userInstallUlLi passWord">
+							<span class="userInImg"><img src="../images/icon48_currency@2x.png"/></span>
+							<span>修改密码</span>
+							<span class="gotoImg"><img src="../images/base_icon_guide_default@2x.png"/></span>
+						</li>
+						<li class="userInstallUlLi binDing">
+							<span class="userInImg"><img src="../images/icon48_currency@2x.png"/></span>
+							<span>账号绑定</span>
+							<span class="gotoImg"><img src="../images/base_icon_guide_default@2x.png"/></span>
+						</li>
+						<li class="userInstallUlLi reMove">
+							<span class="userInImg"><img src="../images/icon48_currency@2x.png"/></span>
+							<span>账号解绑</span>
+							<span class="gotoImg"><img src="../images/base_icon_guide_default@2x.png"/></span>
+						</li>
+						
+					</ul>
+					<ul class="userInstallUl">
+						<li class="userInstallUlLi accountinfor">
+							<span class="userInImg"><img src="../images/icon48_currency@2x.png"/></span>
+							<span>系统设置</span>
+							<span class="gotoImg"><img src="../images/base_icon_guide_default@2x.png"/></span>
+						</li>
+						<li class="userInstallUlLi app_promotion">
+							<span class="userInImg"><img src="../images/icon48_currency@2x.png"/></span>
+							<span>APP推广</span>
+							<span class="gotoImg"><img src="../images/base_icon_guide_default@2x.png"/></span>
+						</li>
+						
+						<li class="userInstallUlLi about">
+							<span class="userInImg"><img src="../images/icon48_currency@2x.png"/></span>
+							<span>关于我们</span>
+							<span class="gotoImg"><img src="../images/base_icon_guide_default@2x.png"/></span>
+						</li>
+						
+					</ul>
+					<div class="exitLogin">退出登陆</div>
+				</div>
+			</div>
+		</div>
+		<!--**********************底部导航 sta**********************-->
+		<nav class="mui-bar mui-bar-tab">
+			<a class="mui-tab-item1 sy" >
+				<span class="mui-icon"><img src="../images/bottombar_icon_index@2x.png"></span>
+				<span class="mui-tab-label">首页</span>
+			</a>
+			<a class="mui-tab-item1 czt">
+				<span class="mui-icon"><img src="../images/bottombat_icon_console@2x.png"></span>
+				<span class="mui-tab-label">操作台</span>
+			</a>
+			<a class="mui-tab-item1 my">
+				<span class="mui-icon"><img src="../images/bottombar_icon_my@2x.png"></span>
+				<span class="mui-tab-label" >我的</span>
+			</a>
+		</nav>
+		<!--**********************底部导航 end**********************-->
+		<script type="text/javascript" src="../static/js/jquery-1.10.2.min.js"></script>
+		<script type="text/javascript" src="../static/js/mui.min.js"></script>
+		<script type="text/javascript" src="../static/js/mui.picker.min.js" ></script>
+		<script type="text/javascript" src="../static/js/rem.js" ></script>
+		<script type="text/javascript" src="../js/mine.js" ></script>
+		<script src="../static/js/bzyd.common.js"></script>
+		<script>
+			mui.init({
+				swipeBack: true //启用右滑关闭功能
+			});
+			(function($) {
+				$('#userInfor-wrapper').scroll({
+					indicators: false //是否显示滚动条
+				});
+			})(mui);
+			$(function() {
+				/*计算模块的高度*/
+				var winHeight = $(window).height();
+				var newHeight = winHeight - 240;
+				$("#userInforList").css("height", newHeight);
+			});
+			//            首页
+			$(".sy").click(function(){
+				BZYD.jnp("./homePage.html");
+			});
+			//			  操作台
+			$(".czt").click(function(){
+				BZYD.jnp("./operatingFloor.html");
+			});
+			//              我的
+			$(".my").click(function(){
+				BZYD.jnp("./mine.html");
+			});
+
+
+//            我的页面跳转到子页面
+//			修改密码
+             $(".passWord").click(function(){
+				 BZYD.jnp("./mine/modifyPassword.html");
+			 });
+//			帐号绑定
+			 $(".binDing").click(function(){
+				 BZYD.jnp("./mine/accNumberBinding.html");
+			 })
+//			帐号解绑
+			 $(".reMove").click(function(){
+				 BZYD.jnp("./mine/accNumberRemove.html");
+			 })
+//			系统设置
+			$(".accountinfor").click(function(){
+				BZYD.jnp("./mine/accountinfor.html");
+			})
+//			app推广
+			$(".app_promotion").click(function(){
+				BZYD.jnp("./mine/App_promotion.html");
+			});
+//			关于我们
+			$(".about").click(function(){
+				BZYD.jnp("./mine/about.html");
+			});
+		</script>
+	</body>
+
+</html>
